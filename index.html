@@ -13971,23 +13971,90 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="https://drive.google.com/uc?id=1HWkFie7Hbf9jDznbWTemPFgRm0vzv_Cu" alt="ZHAW"></p>
+<p><img src="https://drive.google.com/uc?id=1Qih_hjilFQ9xmj0qtYX1UwlYhHsENzi5" width="300"/></p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="A-Gentle-Introduction-to-Python">A Gentle Introduction to Python<a class="anchor-link" href="#A-Gentle-Introduction-to-Python">&#182;</a></h1><p>An intro to setup a Python development environment, the basic structures,basic Git and some popular libraries such as Numpy, Pandas, etc. Contributed by Ahmad Aghaebrahimian (ZHAW-ICLS)</p>
+    <h1 id="A-Gentle-Introduction-to-Python">A Gentle Introduction to Python<a class="anchor-link" href="#A-Gentle-Introduction-to-Python">&#182;</a></h1>
+    <p>An intro to setup a Python development environment, the basic structures, basic Git and some popular libraries such as Numpy and Pandas. </p>
+        <p>Contributed by <a href="https://www.zhaw.ch/en/about-us/person/agha/" target="_blank">Ahmad Aghaebrahimian</a> (ZHAW-ICLS)</p>
+
+    <div>
+  <a href="https://colab.research.google.com/drive/1_EN_s2MFXKhgtmhUdkEegIt8rAdIHPU2?usp=sharing" target="_blank">
+    <img class="colab-badge" src="assets/colab-open.svg" alt="Colab Notebook">
+  </a>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Contents"><strong><em>Contents</em></strong><a class="anchor-link" href="#Contents">&#182;</a></h3>
+
+
+<ul>
+  <li><a href="#Introduction">Introduction</a></li>
+  <li><a href="#Setting-up">Setting up</a>
+    <ul>
+      <li><a href="#Step-1:-Installing-Python">Step 1: Installing Python</a></li>
+      <li><a href="#Step-2:-Installing-a-virtual-environmet">Step 2: Installing a virtual environmet</a></li>
+      <li><a href="#Step-3:-Installing-Integrated-Development-Environment">Step 3: Installing Integrated Development Environment</a></li>
+      <li><a href="#Step-4:-Git-and-Github">Step 4: Git and Github</a></li>
+    </ul>
+  </li>
+
+  <li><a href="#Basics">Basics</a>
+    <ul>
+        <li><a href="#Variables">Variables</a></li>
+        <li><a href="#Data-types">Data types</a></li>
+        <li><a href="#Operators">Operators</a></li>
+        <li><a href="#Conditionals">Conditionals</a></li>
+        <li><a href="#Loops">Loops</a></li>
+        <li><a href="#Loop-control">Loop control</a></li>
+        <li><a href="#File-Input/Output">File Input/Output</a></li>
+        <li><a href="#Functions">Functions</a></li>
+        <li><a href="#Modules-and-Libraries">Modules and Libraries</a></li>
+        <li><a href="#Conclusion">Conclusion</a></li>
+    </ul>
+  </li>
+
+  <li><a href="#Useful-libraries">Useful libraries</a>
+    <ul>
+      <li><a href="#Numpy">Numpy</a>
+              <ul>
+          <li><a href="#Data-structure">Data structure</a></li>
+          <li><a href="#NData-types">Data types</a></li>
+          <li><a href="#Specific-matrices">Specific matrices</a></li>
+          <li><a href="#Operations">Operations</a></li>
+          <li><a href="#Slicing">Slicing</a></li>
+          <li><a href="#Example">Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#Pandas">Pandas</a>
+                    <ul>
+          <li><a href="#Series">Series</a></li>
+          <li><a href="#Dataframe">Dataframe</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+</ul>
+
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Python was created by Guido van Rossum and was first released in 1991. It was named after Monty Python, a popular British comedy group. Python was designed to be an easy-to-read and easy-to-write language that emphasizes readability and code reusability.</p>
+<h3 id="Introduction"><strong><em>Introduction</em></strong><a class="anchor-link" href="#Introduction">&#182;</a></h3><p>Python was created by Guido van Rossum and was first released in 1991. It was named after Monty Python, a popular British comedy group. Python was designed to be an easy-to-read and easy-to-write language that emphasizes readability and code reusability.</p>
 <p>In the late 1990s, Python became increasingly popular as a general-purpose programming language, due to its simplicity, versatility, and ability to run on almost any platform. This led to the development of a large number of third-party libraries, making it a popular choice for various applications, including scientific computing, data analysis, artificial intelligence, and web development. For scientific computing and data analysis, for instance, Python has a number of powerful libraries, including NumPy, which provides support for arrays and matrices, and Pandas, which provides fast and efficient data analysis and manipulation. In the field of Artificial Intelligence (AI), Python has a number of libraries too, including TensorFlow and PyTorch, which are used to build and train machine learning models. Additionally, the scikit-learn library provides a simple and efficient way to perform machine learning tasks, including regression, classification, and clustering. Last but not least, Python has a number of popular libraries, including Django, Flask, and FastAPI for web development.</p>
 <p>In the early 2000s, Python gained even more popularity when it was included as one of the standard scripting languages for the popular Linux operating system. Today, Python is used by organizations such as NASA, Google, and Facebook, and it has become one of the most widely-used programming languages in the world.</p>
 <p>Python has continued to evolve over the years, with the release of several major versions, each of which has brought new features and improvements to the language. The latest version of Python, Python 3, was released in 2008 and has since become the preferred version of the language, due to its improved performance and enhanced features. This overview uses Python 3 as the default version.</p>
-<p>Overall, Python's simplicity, versatility, and popularity have made it a valuable tool for a wide range of tasks, and it continues to be one of the most widely-used programming languages in the world.</p>
 
 </div>
 </div>
@@ -14014,6 +14081,7 @@ Please note that by creating a virtual enviroment as described in Step 2 below, 
 
 </div>
 </div>
+<hr>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Step-2:-Installing-a-virtual-environmet"><strong>Step 2: Installing a virtual environmet</strong><a class="anchor-link" href="#Step-2:-Installing-a-virtual-environmet">&#182;</a></h4><p>The next step in setting up a Python development environment is to create a virtual environment. Virtual environments are an essential tool for Python development. They help maintain a clean and organized development environment and ensure the stability and reproducibility of your projects. Furthermore, virtual environments isolate the development environment from the global Python interpreter, making it particularly beneficial, especially for beginners. There are several ways to create a virtual environment. Here, we use Anaconda for this purpose.</p>
@@ -14037,8 +14105,6 @@ by running conda init?</code> which should be answered with a yes</p>
 <li><p>Alternatively, you can return to the base environment by deactivating the active environment.</p>
 <p><img src="https://drive.google.com/uc?id=1ltdvrj4Tg_6EFvoEdDRncPPBBlIkyiOd" alt="picture"></p>
 </li>
-</ol>
-<ol>
 <li>A complete Anaconda installation comes with Jupyter Notebook, the most popular notebook system for Python. In Python, a notebook is a web-based interactive computational interface that enables you to run and experiment with Python code interactively. To run a notebook locally, open a terminal and run <code>jupyter notebook</code></li>
 </ol>
 <p>Read more about installing Anaconda on Linux <a href="https://docs.anaconda.com/free/anaconda/install/linux/">here</a>.</p>
@@ -14051,7 +14117,7 @@ by running conda init?</code> which should be answered with a yes</p>
 <li><p>Download the Anaconda Mac graphical installer form <a href="https://www.anaconda.com/download">here</a> at the bottom of the page.</p>
 </li>
 <li><p>Run the installer, accept the license agreement and all default values.</p>
-<p><img src="https://drive.google.com/uc?id=14ARLEwMTySv588akRNcHXlVgznCKM4sR" width="60%" height="60%"/></p>
+<p><img src="https://drive.google.com/uc?id=14ARLEwMTySv588akRNcHXlVgznCKM4sR" width="600"></p>
 </li>
 <li><p>When installed, open a 'new' terminal and run <code>conda create -n my_new_env python==3.10</code>. Accept all the default options. (for these steps you may observe similar images as the ones in the Linux part above)</p>
 </li>
@@ -14076,7 +14142,7 @@ by running conda init?</code> which should be answered with a yes</p>
 <li><p>Download the Anaconda Windows graphical installer form <a href="https://www.anaconda.com/download">here</a>, bottom of the page.</p>
 </li>
 <li><p>Run the installer, accept the license agreement, and all default values. On the 'Advanced Installation Options' page, check all the fields.</p>
-<p><img src="https://drive.google.com/uc?id=1lKxgroJYnFy7lFs689l9uOtgX0pAfGtz" width="60%" height="60%"/></p>
+<p><img src="https://drive.google.com/uc?id=1lKxgroJYnFy7lFs689l9uOtgX0pAfGtz" width="600"/></p>
 </li>
 <li><p>When installed, you can work with environments in the command line. Open a command line prompt (CMD) in the start menu and run <code>conda create -n my_new_env python==3.10</code>. Accept all the default options. (for these steps you may observe similar images as the ones in the Linux part above).</p>
 </li>
@@ -14095,6 +14161,7 @@ by running conda init?</code> which should be answered with a yes</p>
 
 </div>
 </div>
+<hr>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Step-3:-Installing-Integrated-Development-Environment"><strong>Step 3: Installing Integrated Development Environment</strong><a class="anchor-link" href="#Step-3:-Installing-Integrated-Development-Environment">&#182;</a></h4><p>The last step is to install a code editor or an Integrated Development Environment (IDE) such as Visual Studio Code, PyCharm, or IDLE (the built-in Python editor). In this tutorial, we install and use PyCharm as the default IDE.</p>
@@ -14108,7 +14175,7 @@ by running conda init?</code> which should be answered with a yes</p>
 <li><p>Another alternative is to run <code>sudo snap install pycharm-community --classic</code> in the terminal.</p>
 </li>
 <li><p>When installed, click on <code>New Project</code> in the welcome window or in the <code>File</code> menu on top of the page (if no welcome window has appeared).</p>
-<p><img src="https://drive.google.com/uc?id=1T85ReDPdUnFlB582yOPjsrhDvtfBrB84" width="60%"/></p>
+<p><img src="https://drive.google.com/uc?id=1T85ReDPdUnFlB582yOPjsrhDvtfBrB84" width="600"/></p>
 </li>
 <li><p>PyCharm integrates with the Anaconda which has already been installed, allowing the creation a new environment with a specific Python version for each project. However, it's important to keep in mind that some libraries may not be compatible with certain Python versions. In that case, it's recommended to create environment with a Python version that is compatible with all the required libraries. With Conda installed, removing an environment with an incompatible Python version and creating a new, compatible environment is a straightforward process as described above.</p>
 </li>
@@ -14116,7 +14183,7 @@ by running conda init?</code> which should be answered with a yes</p>
 </li>
 <li><p>if required, you can install and import new libraries. Click on <code>Terminal</code> at the bottom of the page to open a terminal window. Note to the prompt which includes the active environment created when the project is initialized. Run <code>conda install numpy</code> or <code>pip install numpy</code> to install Numpy a powerful library for working with vectors and matrices.</p>
 </li>
-<li><p>Check what libraries are already installed in your environment with <code>conda list</code> or <code>pip list</code>.</p>
+<li><p>Check what libraries are already installed in your environment by running <code>conda list</code> or <code>pip list</code> in the terminal.</p>
 </li>
 <li><p>if a library's version is incompatible, let's say Numpy, you can safely remove it from your environment with <code>pip uninstall numpy</code> and install one with the correct version, let's say 1.24.0, with <code>pip install numpy==1.24.0</code>.</p>
 </li>
@@ -14131,12 +14198,12 @@ by running conda init?</code> which should be answered with a yes</p>
 <li><p>Download the Pycharm installer from <a href="https://www.jetbrains.com/pycharm/download/#section=mac">here</a>. Select the Community version which is an open-source and free software. Also, select the dmg package compatible with your processor type (Intel or Apple Silicon).</p>
 </li>
 <li><p>Install Pycharm by running the installer. Accept all the default values.</p>
-<p><img src="https://drive.google.com/uc?id=1N-B_dQcBZZREybgSqga55ZTYt2H7sllV" width="30%"/></p>
+<p><img src="https://drive.google.com/uc?id=1N-B_dQcBZZREybgSqga55ZTYt2H7sllV" width="400"/></p>
 </li>
 <li><p>When finished, you can run Pycharm by clicking on the newly made icon 'Pycharm CE' in the Applications folder.</p>
 </li>
 <li><p>Click on <code>New Project</code> in the welcome window or in the <code>File</code> menu on top of the page (if no welcome window is appeared). From now on, all the procedures are exactly similar to step 3 onward, in the Linux part above. Please follow the instruction from there on.</p>
-<p><img src="https://drive.google.com/uc?id=1WiNvNcSmCAyxyYKGezmy9NMYZJUJoNK6" width="60%"/></p>
+<p><img src="https://drive.google.com/uc?id=1WiNvNcSmCAyxyYKGezmy9NMYZJUJoNK6" width="600"/></p>
 </li>
 </ol>
 <hr>
@@ -14156,26 +14223,28 @@ by running conda init?</code> which should be answered with a yes</p>
 
 </div>
 </div>
+<hr>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Step-4:-Git-and-Github"><strong>Step 4: Git and Github</strong><a class="anchor-link" href="#Step-4:-Git-and-Github">&#182;</a></h4><p>Git is a distributed version control system that allows developers to track code changes, collaborate with others, and revert to previous versions of their work.</p>
 <p>GitHub is a web-based platform (similar to Bitbucket or GitLab) that provides hosting for Git repositories, as well as additional collaboration tools like issue tracking, code review, and continuous integration.</p>
 <p>Git commands are often run in the command line or terminal. However, it is nicely integrated with Pycharm and you can use it within your IDE. The first step to using Git is to make sure it's been already installed on the system. Git is available in Linux and MacOS by default. You can check this by opening a terminal and running <code>git --version</code>. In Windows, you need to install Git from <a href="https://git-scm.com/downloads">here</a>. Download the installer for Windows, run, and accept all the default values except for the terminal emulator which is better to use the Windows default console window (like the image below). In Windows, when Git installation is done, you may need to restart your Pycharm IDE.</p>
-<p><img src="https://drive.google.com/uc?id=1JdvaP5sco2m-VQ3QJyDRuPHD0Mtpo9SM" width="60%"/></p>
+<p><img src="https://drive.google.com/uc?id=1JdvaP5sco2m-VQ3QJyDRuPHD0Mtpo9SM" width="630"/></p>
 <p>After creating a new project in Pycharm, you can open VCS menu and select 'Enable Version Control Integration'. In the next window, select 'Git'. Doing so, VCS in the top menu changes to Git (in Windows, it requires IDE restart). Git has numerous functionalities. Yet, here we describe the most basic ones; Commit, Push, and Clone.</p>
-<p>The history of all changes made to code is stored by Git. After making modifications to the code, you can <code>Commit</code> to save the progress. When committing, it is necessary to provide a description that offers a clue about the changes made. These commit points serve as checkpoints for developers, allowing them to revert to earlier stages in case of errors.</p>
-<p>Click on the <code>Commit</code> in Git menu. In the newly opened window, select all 'Unversioned Files'. In the provided space below the window, provide a note or message to remind you what has been changed in this commit. (e.g., Initial commit, Deleted my_file.txt). And hit the Commit button.</p>
+<p>The history of all changes made to code is stored by Git. After making modifications to the code, you can <code>Commit</code> to save the progress. You may add all or only specific files for committing. When committing, it is necessary to provide a description that offers a clue about the changes you have made. These commit points serve as checkpoints for developers, allowing them to revert to earlier stages in case of errors.</p>
+<p>Click on the <code>Commit</code> in Git menu in your PyCharm. In the newly opened window, select all 'Unversioned Files'. In the provided space below the window, provide a note or message to remind you what has been changed in this commit. (e.g., Initial commit, Deleted my_file.txt). And hit the Commit button.</p>
 <p>you can perform some changes (adding or deleting, or changing some code) and commit each time. Now in the terminal at the bottom of the Pycharm window, run <code>git log</code> to see the history of your commits. Each entry in the log has a <code>commit_id</code> (hash code) using which you can restore your code state to that commit by <code> git checkout commit_id</code></p>
 <p>Up to now, all tracking and progress saving has been done locally. To publish the code into a remote folder (i.e., repository) on GitHub for instance, one needs to open an account in GitHub first. This is a straightforward process. Just navigate to <a href="https://github.com/">https://github.com/</a> and SingUp.</p>
 <p>Next, within the PyCharm project, click on the menu <code>Git -> GitHub -> Share Project on GitHub</code></p>
-<p><img src="https://drive.google.com/uc?id=1-H9euYCdJIfDViA7OFCsN296i55l9x0r" width="40%"/></p>
+<p><img src="https://drive.google.com/uc?id=1-H9euYCdJIfDViA7OFCsN296i55l9x0r" width="500"/></p>
 <p>Provide a repository name and description. Click 'Add account' to connect your PyCharm to your GitHub account. Select 'Log In via GitHub' which automatically navigates you to the GitHub Login page. There you may Authorize JetBrains (PyCharm) to connect to your GitHub Account. Provide your credentials and Authorize JetBrains IDE integration.</p>
-<p><img src="https://drive.google.com/uc?id=1tSQpMk4w4vssbB45iIQfT5kag01iw8aG" width="40%"/></p>
+<p><img src="https://drive.google.com/uc?id=1tSQpMk4w4vssbB45iIQfT5kag01iw8aG" width="500"/></p>
 <p>After this step, PyCharm connects to your GitHub accounts and creates a new repository there. Now, you can click on Push in the Git menu, select your commit within the Push windows, and hit the Push button. You can check your new repository in GitHub and observe the changes that have been updated there.</p>
-<p>If you found other people's repositories interesting and decided to work on their code, you can simply <code>Clone</code> their project by clicking on Clone under the Git menu (It is important to acknowledge the contribution of others by citing their work if you have utilized all or part of their code.) This will open a window asking for the URL of the original repository and the local address of where you want the copy. The window will open the project after it copies the content. To learn more about Fork, Pull requests, branches, and many other Git functionalities check <a href="https://docs.github.com/en/get-started/using-git/about-git">this document</a>.</p>
+<p>If you found other people's repositories interesting and decided to work on their code, you can simply <code>Clone</code> their project by clicking on Clone under the Git menu (It is important to acknowledge the contribution of others by citing their work if you have utilized all or part of their code.) This will open a window asking for the URL of the original repository and the local address of where you want the copy the repository. The window will open the project after it copies the content. To learn more about Fork, Pull requests, branches, and many other Git functionalities check <a href="https://docs.github.com/en/get-started/using-git/about-git">this document</a>.</p>
 
 </div>
 </div>
+<hr>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Basics"><strong><em>Basics</em></strong><a class="anchor-link" href="#Basics">&#182;</a></h3><p>Python is a high-level language known for its readability and ease of use. Python uses indentation to define blocks of code, such as loops or functions. Indention may set to any number of empty characters (often 4 or 8) which should be consistent throughout the entire code.</p>
@@ -14200,7 +14269,7 @@ by running conda init?</code> which should be answered with a yes</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># These blocks with the play button on the left are code cells. You can run these cells or copy/paste the codes into your IDE to see the outcome.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># These blocks with the play button on the left are code cells. If you are working in CodaLab, you can run these cells or copy/paste the codes into your IDE to see the outcome.</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>                              <span class="c1"># assign 10 to variable x as an integer</span>
 <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -14699,8 +14768,7 @@ For example: = for assignment, += for addition and assignment, etc.</p>
 <h4 id="File-Input/Output"><strong>File Input/Output</strong><a class="anchor-link" href="#File-Input/Output">&#182;</a></h4><p>To be able to read or write a file in Python, one must first utilize the built-in <code>open()</code> function to open it. This function generates a <code>file</code> object that can be used to invoke other related methods.</p>
 <p>This is a simple syntax for the open function:</p>
 <p><code>file_obj = open(file_name, access_mode)</code></p>
-<p><code>file_name</code> is an absolute or relative file address
-<code>access_mode</code> is the mode of the file to be opened (read, write, append, etc.)</p>
+<p><code>file_name</code> is an absolute or relative file address. <code>access_mode</code> is the mode of the file to be opened (read, write, append, etc.)</p>
 <p>To read more about Files check <a href="https://www.tutorialspoint.com/opening-and-closing-files-in-python">this</a></p>
 
 </div>
@@ -14718,7 +14786,7 @@ For example: = for assignment, += for addition and assignment, etc.</p>
 <span class="n">file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                                                                <span class="c1"># it is a best practise to close the file after finishing working on that</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>                                      <span class="c1"># use this structure and do not need to close file_obj manually</span>
-  <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_obj</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>                                             <span class="c1"># file ojects has a function readlines which does eaxtly as the name suggests  </span>
+  <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_obj</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>                                             <span class="c1"># file ojects has a function readlines which does exactly as the name suggests </span>
     <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>                                                        <span class="c1"># rstrip() removes the new line character at the end of each line</span>
 </pre></div>
 
@@ -14822,9 +14890,10 @@ For example: = for assignment, += for addition and assignment, etc.</p>
 
 </div>
 </div>
+<hr>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Useful-modules"><strong><em>Useful modules</em></strong><a class="anchor-link" href="#Useful-modules">&#182;</a></h3><p>Numpy, Scikit learn, Pandas, and Keras (within Tensorflow) as a few popular python libraries are introduced here. Before proceeding, please open a new terminal in Pycharm for your environment and install the following libraries.</p>
+<h3 id="Useful-libraries"><strong><em>Useful libraries</em></strong><a class="anchor-link" href="#Useful-libraries">&#182;</a></h3><p>Numpy and Pandas as two popular python libraries are introduced here.</p>
 
 </div>
 </div>
@@ -14842,7 +14911,7 @@ For example: = for assignment, += for addition and assignment, etc.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Before working with Numpy, let's review some basic and useful concepts in linear algebra. Beginning with scalar, vector, matrix, and tensor</p>
+    <h4 id="Data-structure"><em>Data structure:</em><a class="anchor-link" href="#Data-structure">&#182;</a></h4><p>Before working with Numpy, let's review some basic and useful concepts in linear algebra. Beginning with scalar, vector, matrix, and tensor data structures</p>
 <p><strong><em>Scalar</em></strong>: Single numerical value (rank 0), e.g., 2.0</p>
 <p><strong><em>Vector</em></strong>: An array of numbers (rank 1), e.g., [2.0, 3.0, 4.0]</p>
 <p><strong><em>Matrix</em></strong>: An array of numbers arranged in rows and columns (rank 2), e.g. a 2-row by 3-column (i.e., 2 x 3) matrix of zeros,</p>
@@ -14895,7 +14964,7 @@ For example: = for assignment, += for addition and assignment, etc.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Int (integer) and Float with different precisions (8, 16, 32, 64 bit) are two common data types in numpy arrays. Uint (unsigned integer), bool, and complex are some other data types. Numpy arrays can have their data types explicitly declared or implicitly inferred.</p>
+    <h4 id="NData-types"><em>Data types:</em><a class="anchor-link" href="#NData-types">&#182;</a></h4><p>Int (integer) and Float with different precisions (8, 16, 32, 64 bit) are two common data types in numpy arrays. Uint (unsigned integer), bool, and complex are some other data types. Numpy arrays can have their data types explicitly declared or implicitly inferred.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14967,7 +15036,7 @@ For example: = for assignment, += for addition and assignment, etc.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In the following block, several popular types of matrices are introduced.</p>
+    <h4 id="Specific-matrices"><em>Specific matrices:</em><a class="anchor-link" href="#Specific-matrices">&#182;</a></h4><p>Inthe following block, several specific types of matrices are introduced.</p>
 <p><strong><em>zero/one/full matrix</em></strong>
  matrices with any size in which all elements are the same number, zeros, ones, or a predefined other value</p>
 <p><strong><em>Identity matrix</em></strong>
@@ -15027,7 +15096,7 @@ The inverse of a matrix(denoted with a superscript -1) is another square matrix 
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Numpy comes with a wide range of arithmetic and mathematical operations:</p>
+    <h4 id="Operations"><em>Operations:</em><a class="anchor-link" href="#Operations">&#182;</a></h4><p>Numpy comes with a wide range of arithmetic and mathematical operations:</p>
 <p><strong><em>Element-wise operations</em></strong>
 vector/vector or matrix-matrix addition, subtraction, multiplication, and division are possible if both vectors or matrices have the same rank and size.</p>
 
@@ -15142,7 +15211,7 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Numpy provides several ways to index arrays, such as slicing, integer indexing and Boolean indexing.</p>
+    <h4 id="Slicing"><em>Slicing:</em><a class="anchor-link" href="#Slicing">&#182;</a></h4><p>Numpy provides several ways to index arrays, such as slicing, integer indexing and Boolean indexing.</p>
 <ul>
 <li>Array slicing works similarly to list slicing, yet since arrays may have several dimensions a slice should be provided for each dimension</li>
 </ul>
@@ -15266,7 +15335,7 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>To wrap up this section we do some image manipulations using numpy. Before that, we should install two other libraries:</p>
+    <h4 id="Example"><em>Example:</em><a class="anchor-link" href="#Example">&#182;</a></h4><p>To wrap up this section we do some image manipulations using numpy. Before that, we should install two other libraries:</p>
 <ul>
 <li><p><code>pip install scikit-image</code></p>
 <p>Scikit-image is a collection of algorithms for image processing. We use it to read an image into a three-dimensional array (number pixels in height, number of pixels in width, 3 values for Red, Green, and Blue). Check <a href="https://scikit-image.org/docs/stable/index.html">here</a> for more info.</p>
@@ -15285,7 +15354,7 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">io</span>                                                                            <span class="c1"># import io module from skimage library</span>
 <span class="kn">from</span> <span class="nn">matplotlib.pylab</span> <span class="kn">import</span> <span class="n">plt</span>                                                                  <span class="c1"># import pyplot module </span>
-<span class="n">image_matrix</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;https://drive.google.com/uc?id=1Bsmk_7b4dBJPr1y-bQfLttYQPiMs-q_o&#39;</span><span class="p">)</span>      <span class="c1"># call imread function to get the image matrix</span>
+<span class="n">image_matrix</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;https://drive.google.com/uc?id=1Bsmk_7b4dBJPr1y-bQfLttYQPiMs-q_o&#39;</span><span class="p">)</span>      <span class="c1"># call imread function to get the image matrix. An RGB image is a 3-dimensional (height, width, colors) mextix with values between 0-255 for each color</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">image_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_matrix</span><span class="p">)</span>                                                                          <span class="c1"># visualize the image</span>
 </pre></div>
@@ -15382,6 +15451,7 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+    <hr>
 <h4 id="Pandas"><strong>Pandas</strong><a class="anchor-link" href="#Pandas">&#182;</a></h4><p>Pandas is a fast and popular data manipulation library for the Python programming language. To begin with Pandas, let's first install the library:</p>
 <ul>
 <li><code>pip install pandas</code> <ul>
@@ -15395,9 +15465,12 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Pandas is built on top of the NumPy library and provides high-level data structures and functions to manipulate data. The two main data structures in Pandas are the Series and the DataFrame.</p>
-<ul>
-<li>A Series is a one-dimensional labeled array that can hold any data type, such as integers, floats, strings, or even Python objects. </li>
-</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+    <h4 id="Series"><em>Series:</em><a class="anchor-link" href="#Series">&#182;</a></h4><p>A Series is a one-dimensional labeled array that can hold any data type, such as integers, floats, strings, or even Python objects.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15441,9 +15514,7 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>A DataFrame is a two-dimensional labeled data structure with columns of potentially different data types. It can be thought of as a spreadsheet.</li>
-</ul>
+    <h4 id="Dataframe"><em>Dataframe:</em><a class="anchor-link" href="#Dataframe">&#182;</a></h4><p>A DataFrame is a two-dimensional labeled data structure with columns of potentially different data types. It can be thought of as a spreadsheet.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15546,5 +15617,11 @@ vector/vector or matrix-matrix addition, subtraction, multiplication, and divisi
 
 </div>
 </body>
+
+
+
+
+
+
 
 </html>
